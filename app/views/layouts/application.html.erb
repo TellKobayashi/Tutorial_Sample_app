@@ -13,3 +13,11 @@
     <%= yield %>
   </body>
 </html>
+
+<%# このページでは組み込み関数のstylesheet_link_tagを利用して、%> 
+<%# application.cssを全てのメディアタイプで使えるようにしている。%>
+<%# 外部スタイルシートを指定するリンクタグを作成する関数（ヘルパー）>
+<%# 上から、yieldでtitle = Ruby~Appを代入している。>
+<%# 下5行で、CSS,JavaScript,csrfを導入している。>
+<%# csrfは攻撃を防ぐためのRailsのメソッド>
+<%# bodyの=yieldで、上で指定したtitleがその位置に代入される>
